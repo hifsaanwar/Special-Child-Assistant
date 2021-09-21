@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "422145952978",
+    "project_id": "fyp-sca",
+    "storage_bucket": "fyp-sca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422145952978:android:0e133ff1e3716b702db10b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422145952978-bhpnj3um5apvhp8ip449st7ko3kllk7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_application_2",
+            "certificate_hash": "7fa595509e2ee88ea391cf945eb535939264b717"
+          }
+        },
+        {
+          "client_id": "422145952978-2obvgm11qv7nj9t6gv5oqbr5e38nd99h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQDqQrDquyDoJPBoP9OKWV1NojngIBUwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422145952978-2obvgm11qv7nj9t6gv5oqbr5e38nd99h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
