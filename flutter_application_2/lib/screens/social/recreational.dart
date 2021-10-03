@@ -4,6 +4,13 @@ import 'package:flutter_application_2/screens/educational%20institutes/Schools.d
 import 'package:flutter_application_2/screens/jobs/jobs.dart';
 
 import 'package:flutter_application_2/screens/medical/help.dart';
+import 'package:flutter_application_2/screens/social/art_therapy.dart';
+import 'package:flutter_application_2/screens/social/miracle_league.dart';
+import 'package:flutter_application_2/screens/social/music_therapy.dart';
+import 'package:flutter_application_2/screens/social/pet_therapy.dart';
+import 'package:flutter_application_2/screens/social/social_olympics.dart';
+import 'package:flutter_application_2/screens/social/swimming.dart';
+import 'package:flutter_application_2/screens/social/vision_therapy.dart';
 
 class Recreational extends StatelessWidget {
   static String routeName = "/recreational";
@@ -28,9 +35,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => Swimming()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -48,9 +58,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => MiracleLeague()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -68,9 +81,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => SpecialOlympics()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -88,9 +104,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => ArtTherapy()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -108,9 +127,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => MusicTherapy()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -128,9 +150,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => PetTherapy()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -148,9 +173,12 @@ class Recreational extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                onPressed: () {
-                  print("RaisedButton");
-                },
+                 onPressed: () {  
+                Navigator.push(  
+                context,  
+                MaterialPageRoute(builder: (context) => VisionTherapy()),  
+               );  
+               },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),

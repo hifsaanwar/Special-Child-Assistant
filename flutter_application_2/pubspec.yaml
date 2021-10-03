@@ -33,7 +33,8 @@ dependencies:
   firebase_core: ^1.4.0
   firebase_database: "^6.0.0"
   shared_preferences: ^2.0.6
-
+  readmore: ^2.1.0
+ 
 dev_dependencies:
   flutter_test:
     sdk: flutter

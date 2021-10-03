@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/constants.dart';
 import 'package:flutter_application_2/screens/educational%20institutes/Schools.dart';
 import 'package:flutter_application_2/screens/jobs/jobs.dart';
-
-import 'package:flutter_application_2/screens/medical/help.dart';
 import 'package:flutter_application_2/screens/social/recreational.dart';
 
 class Social extends StatelessWidget {
