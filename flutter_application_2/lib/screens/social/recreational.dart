@@ -1,3 +1,5 @@
+// ignore_for_file: must_call_super
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/constants.dart';
 import 'package:flutter_application_2/screens/educational%20institutes/Schools.dart';
@@ -11,8 +13,7 @@ import 'package:flutter_application_2/screens/social/pet_therapy.dart';
 import 'package:flutter_application_2/screens/social/social_olympics.dart';
 import 'package:flutter_application_2/screens/social/swimming.dart';
 import 'package:flutter_application_2/screens/social/vision_therapy.dart';
-
-class Recreational extends StatelessWidget {
+ class Recreational extends StatelessWidget {
   static String routeName = "/recreational";
 
   @override

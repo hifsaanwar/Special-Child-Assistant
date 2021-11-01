@@ -122,15 +122,21 @@ Help autistic children improve communication. ''';
             ),
             SizedBox(height: 20),
             Container(
-              decoration: new BoxDecoration(color: kPrimaryColor),
-              child: Text(
-                content,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 30,
-                ),
-              ),
+               width: 400,
+      height: 400,
+      padding: EdgeInsets.all(12),
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: kPrimaryColor , width: 4.0),
+       
+        borderRadius: BorderRadius.all(Radius.circular(8.0)),
+      ),
+      child: Text(
+        content,
+        style: TextStyle(fontSize: 32, color:kPrimaryColor),
+        textAlign: TextAlign.center,
+      ),
             ),
             SizedBox(height: 30),
             Container(
