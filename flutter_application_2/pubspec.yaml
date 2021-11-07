@@ -34,7 +34,10 @@ dependencies:
   firebase_database: "^6.0.0"
   shared_preferences: ^2.0.6
   readmore: ^2.1.0
- 
+  material: ^1.0.0+2
+  searchable_dropdown: ^1.1.0
+  http: ^0.13.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

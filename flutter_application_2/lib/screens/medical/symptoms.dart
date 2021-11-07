@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/constants.dart';
-
+import 'package:searchable_dropdown/searchable_dropdown.dart';
 import 'package:flutter_application_2/screens/medical/help.dart';
 
 class Symptoms extends StatelessWidget {
@@ -49,6 +49,8 @@ class SymptomForm extends StatefulWidget {
     return SymptomFormState();
   }
 }
+
+List<String> localData = [/*bilateral hearing loss*/'Reduced Hearing' ,/*Cerebral Palsy*/'Stiff Muscles' ,'Tremors' ,/*Fragile X syndrome*/'Tempor Tantrums' ,'Anxiety' ,'Aggressive/Self Destructive Behavior' ,'Hyperactivity' /*downsyndrome*/,'Flat Fatial Features','Bulging Toungue' ,'Upward Slanting Eyes'/*Kernicterus*/,'Fever/Drowsiness','Paleness' ,'Poor Feeding','Muscle Spasms'/*epilepsy*/,'Stroke','Lack Of Oxygen','Cyst'/*Dyslexia*/,'Difficulty in Language Processing/Learning','Unable to speak or pronounce words properly','Using a lot of "Umms" in Coversation',/*Dmd*/'Shortness of Breath','Headaches','Slow Movements','Seizures','Sleepiness','Trouble Concentrating','Clumsiness'];
 
 class SymptomFormState extends State<SymptomForm> {
   // Create a global key that uniquely identifies the Form widget
