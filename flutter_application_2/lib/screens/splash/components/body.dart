@@ -86,7 +86,7 @@ class _BodyState extends State<Body> {
                         // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                         // color: kPrimaryColor,
                         onPressed: () {
-                          Navigator.pushNamed(context, HomeScreen.routeName);
+                          Navigator.pushNamed(context, SignInScreen.routeName);
                           //Navigator.pushNamed(context, SignInScreen.routeName);
                         },
                         child: Text(

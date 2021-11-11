@@ -274,11 +274,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
-        backgroundColor: kPrimaryColor,
-        iconTheme: IconThemeData(color: Colors.white),
-        title: Text("Special Child Assistant"),
-      ),
       backgroundColor: KColors.background,
       //bottomNavigationBar: BottomMenuBar(
       //key: null,
@@ -290,6 +285,7 @@ class HomePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                _appBar(context),
                 _header(context),
                 _recommendedSection(context),
                 _recentPostedJob(context)

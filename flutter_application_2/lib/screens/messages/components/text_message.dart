@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_application_2/models/ChatMessage.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,13 @@ class TextMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool? isSender;
+    String currentUserUid = FirebaseAuth.instance.currentUser!.uid.toString();
+    if (currentUserUid == message!.fromUUID) {
+      isSender = true;
+    } else {
+      isSender = false;
+    }
     return Container(
       // color: MediaQuery.of(context).platformBrightness == Brightness.dark
       //     ? Colors.white
@@ -22,13 +30,13 @@ class TextMessage extends StatelessWidget {
         vertical: kDefaultPadding / 2,
       ),
       decoration: BoxDecoration(
-        color: kPrimaryColor.withOpacity(message!.isSender ? 1 : 0.1),
+        color: kPrimaryColor.withOpacity(isSender ? 1 : 0.1),
         borderRadius: BorderRadius.circular(30),
       ),
       child: Text(
         message!.text,
         style: TextStyle(
-          color: message!.isSender
+          color: isSender
               ? Colors.white
               : Theme.of(context).textTheme.bodyText1!.color,
         ),
