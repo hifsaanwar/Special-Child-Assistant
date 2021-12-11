@@ -38,29 +38,32 @@ The Miracle League has an aggressive plan to help local communities  build Mirac
         iconTheme: IconThemeData(color: Colors.white),
         title: Text("Miracle League"),
       ),
-      body: SingleChildScrollView(
+     body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-          SizedBox(height: 10),
-             Container(
-      height: 250.0,
+            SizedBox(height: 20),
+            Container(
+               height: 250.0,
       width: 250.0,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(
-              'assets/images/ML.jpg'),
-          fit: BoxFit.fill,
-          
-        ),
-        
-        shape: BoxShape.circle,
-      ),
+  decoration: BoxDecoration(
+    color: const Color(0xff7c94b6),
+    image: const DecorationImage(
+      image: AssetImage('assets/images/ML.jpg'),
+      fit: BoxFit.cover,
     ),
-    SizedBox(height: 20),
+    border: Border.all(
+      color: Colors.black,
+      width: 8,
+    ),
+    borderRadius: BorderRadius.circular(12),
+  ),
+),
+            
+            SizedBox(height: 20),
             Container(
               width: 400,
-      height: 400,
+      height: 500,
       padding: EdgeInsets.all(12),
       alignment: Alignment.center,
       decoration: BoxDecoration(
@@ -75,7 +78,7 @@ The Miracle League has an aggressive plan to help local communities  build Mirac
         textAlign: TextAlign.center,
       ),
             ),
-            SizedBox(height: 30),
+             SizedBox(height: 30),
             Container(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,

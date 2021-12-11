@@ -6,7 +6,7 @@ import 'package:flutter_application_2/routes.dart';
 import 'package:flutter_application_2/screens/splash/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());

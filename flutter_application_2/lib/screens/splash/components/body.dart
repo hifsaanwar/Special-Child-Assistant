@@ -87,7 +87,7 @@ class _BodyState extends State<Body> {
                         // color: kPrimaryColor,
                         onPressed: () {
                           Navigator.pushNamed(context, HomeScreen.routeName);
-                          //Navigator.pushNamed(context, SignInScreen.routeName);
+                         // Navigator.pushNamed(context, SignInScreen.routeName);
                         },
                         child: Text(
                           "Continue",
@@ -99,12 +99,7 @@ class _BodyState extends State<Body> {
                       ),
                     ),
 
-                    // TextButton(
-                    //   onPressed: () {
-                    //     Navigator.pushNamed(context, SignInScreen.routeName);
-                    //   },
-                    //   child: Text("Continue"),
-                    // ),
+                     
                     Spacer(),
                   ],
                 ),
