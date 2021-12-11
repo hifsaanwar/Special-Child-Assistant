@@ -147,6 +147,7 @@ class _ContactsPageState extends State<NewGroupScreen> {
                 onPressed: () {
                   setState(() {
                     Navigator.pop(context);
+                    Navigator.pop(context);
                   });
                   var uuid = Uuid();
                   var groupId = uuid.v1();
