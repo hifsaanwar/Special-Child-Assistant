@@ -1,14 +1,33 @@
+import 'package:contacts_service/contacts_service.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter_application_2/constants.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_2/models/ChatMessage.dart';
+import 'dart:collection';
 import 'components/body.dart';
 
 class MessagesScreen extends StatelessWidget {
+  const MessagesScreen({
+    Key? key,
+    //required this.members,
+    required this.groupName,
+    required this.groupId,
+  }) : super(key: key);
+
+  // Declare a field that holds the Todo.
+  //final List<ChatMessage> messages;
+
+  final String groupName;
+  final String groupId;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(),
+      body: Body(
+        groupId: groupId,
+        groupName: groupName,
+      ),
     );
   }
 
@@ -26,11 +45,11 @@ class MessagesScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Kristin Watson",
+                groupName,
                 style: TextStyle(fontSize: 16),
               ),
               Text(
-                "Active 3m ago",
+                "Group members",
                 style: TextStyle(fontSize: 12),
               )
             ],

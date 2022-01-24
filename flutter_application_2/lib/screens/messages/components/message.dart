@@ -1,6 +1,7 @@
 import 'package:flutter_application_2/models/ChatMessage.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_2/screens/messages/components/image_message.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../../constants.dart';
 import 'audio_message.dart';
 import 'text_message.dart';
@@ -16,6 +17,13 @@ class Message extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool? isSender;
+    String currentUserUid = FirebaseAuth.instance.currentUser!.uid.toString();
+    if (currentUserUid == message.fromUUID) {
+      isSender = true;
+    } else {
+      isSender = false;
+    }
     Widget messageContaint(ChatMessage message) {
       switch (message.messageType) {
         case ChatMessageType.text:
@@ -24,6 +32,8 @@ class Message extends StatelessWidget {
           return AudioMessage(message: message);
         case ChatMessageType.video:
           return VideoMessage();
+        case ChatMessageType.image:
+          return ImageMessage();
         default:
           return SizedBox();
       }
@@ -33,9 +43,9 @@ class Message extends StatelessWidget {
       padding: const EdgeInsets.only(top: kDefaultPadding),
       child: Row(
         mainAxisAlignment:
-            message.isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
+            isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
         children: [
-          if (!message.isSender) ...[
+          if (!isSender) ...[
             CircleAvatar(
               radius: 12,
               backgroundImage: AssetImage("assets/images/user_2.png"),
@@ -43,7 +53,7 @@ class Message extends StatelessWidget {
             SizedBox(width: kDefaultPadding / 2),
           ],
           messageContaint(message),
-          if (message.isSender) MessageStatusDot(status: message.messageStatus)
+          if (isSender) MessageStatusDot(status: message.messageStatus)
         ],
       ),
     );

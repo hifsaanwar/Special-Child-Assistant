@@ -23,8 +23,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Special Child Assistant"),
-        backgroundColor: kPrimaryColor,
-        iconTheme: IconThemeData(color: Colors.white)
       ),
       body: Body(),
       drawer: Drawer(

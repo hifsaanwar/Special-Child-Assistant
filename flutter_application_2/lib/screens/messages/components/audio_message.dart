@@ -1,4 +1,5 @@
 import 'package:flutter_application_2/models/ChatMessage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -9,6 +10,13 @@ class AudioMessage extends StatelessWidget {
   const AudioMessage({Key? key, this.message}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    bool? isSender;
+    String currentUserUid = FirebaseAuth.instance.currentUser!.uid.toString();
+    if (currentUserUid == message!.fromUUID) {
+      isSender = true;
+    } else {
+      isSender = false;
+    }
     return Container(
       width: MediaQuery.of(context).size.width * 0.55,
       padding: EdgeInsets.symmetric(
@@ -17,13 +25,13 @@ class AudioMessage extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(30),
-        color: kPrimaryColor.withOpacity(message!.isSender ? 1 : 0.1),
+        color: kPrimaryColor.withOpacity(isSender ? 1 : 0.1),
       ),
       child: Row(
         children: [
           Icon(
             Icons.play_arrow,
-            color: message!.isSender ? Colors.white : kPrimaryColor,
+            color: isSender ? Colors.white : kPrimaryColor,
           ),
           Expanded(
             child: Padding(
@@ -36,7 +44,7 @@ class AudioMessage extends StatelessWidget {
                   Container(
                     width: double.infinity,
                     height: 2,
-                    color: message!.isSender
+                    color: isSender
                         ? Colors.white
                         : kPrimaryColor.withOpacity(0.4),
                   ),
@@ -46,7 +54,7 @@ class AudioMessage extends StatelessWidget {
                       height: 8,
                       width: 8,
                       decoration: BoxDecoration(
-                        color: message!.isSender ? Colors.white : kPrimaryColor,
+                        color: isSender ? Colors.white : kPrimaryColor,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -57,8 +65,8 @@ class AudioMessage extends StatelessWidget {
           ),
           Text(
             "0.37",
-            style: TextStyle(
-                fontSize: 12, color: message!.isSender ? Colors.white : null),
+            style:
+                TextStyle(fontSize: 12, color: isSender ? Colors.white : null),
           ),
         ],
       ),
