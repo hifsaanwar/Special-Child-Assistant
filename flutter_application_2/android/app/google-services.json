@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "422145952978",
-    "project_id": "fyp-sca",
-    "storage_bucket": "fyp-sca.appspot.com"
+    "project_number": "941628048156",
+    "project_id": "fypfall-2021-6b304",
+    "storage_bucket": "fypfall-2021-6b304.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:422145952978:android:0e133ff1e3716b702db10b",
+        "mobilesdk_app_id": "1:941628048156:android:d79c0e0a4aa32673ec30d9",
         "android_client_info": {
           "package_name": "com.example.flutter_application_2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "422145952978-bhpnj3um5apvhp8ip449st7ko3kllk7l.apps.googleusercontent.com",
+          "client_id": "941628048156-sbl3isvk2trbsrul5ft6rbv8vji9c1hf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.flutter_application_2",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "422145952978-2obvgm11qv7nj9t6gv5oqbr5e38nd99h.apps.googleusercontent.com",
+          "client_id": "941628048156-rl8im7fa33uj3vcul39u46j5b4v5er62.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQDqQrDquyDoJPBoP9OKWV1NojngIBUwM"
+          "current_key": "AIzaSyBXKiPqATUifIptvBaDJYKa0cHVNupU9v4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "422145952978-2obvgm11qv7nj9t6gv5oqbr5e38nd99h.apps.googleusercontent.com",
+              "client_id": "941628048156-rl8im7fa33uj3vcul39u46j5b4v5er62.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

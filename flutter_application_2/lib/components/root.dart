@@ -54,7 +54,7 @@ class _RootPage extends State<RootPage> {
   Widget build(BuildContext context) {
     switch (status) {
       case AuthStatus.notSignedIn:
-        return new SplashScreen();
+        return new SplashScreen(); //splash screen
       case AuthStatus.signedIn:
         return new HomeScreen();
     }

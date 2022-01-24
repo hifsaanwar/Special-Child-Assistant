@@ -1,19 +1,11 @@
-// ignore_for_file: must_call_super
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/constants.dart';
 import 'package:flutter_application_2/screens/educational%20institutes/Schools.dart';
 import 'package:flutter_application_2/screens/jobs/jobs.dart';
 
 import 'package:flutter_application_2/screens/medical/help.dart';
-import 'package:flutter_application_2/screens/social/art_therapy.dart';
-import 'package:flutter_application_2/screens/social/miracle_league.dart';
-import 'package:flutter_application_2/screens/social/music_therapy.dart';
-import 'package:flutter_application_2/screens/social/pet_therapy.dart';
-import 'package:flutter_application_2/screens/social/social_olympics.dart';
-import 'package:flutter_application_2/screens/social/swimming.dart';
-import 'package:flutter_application_2/screens/social/vision_therapy.dart';
- class Recreational extends StatelessWidget {
+
+class Recreational extends StatelessWidget {
   static String routeName = "/recreational";
 
   @override
@@ -36,12 +28,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => Swimming()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -59,12 +48,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => MiracleLeague()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -82,12 +68,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => SpecialOlympics()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -105,12 +88,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => ArtTherapy()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -128,12 +108,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => MusicTherapy()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -151,12 +128,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => PetTherapy()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -174,12 +148,9 @@ import 'package:flutter_application_2/screens/social/vision_therapy.dart';
               height: 50,
               child: RaisedButton(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 30),
-                 onPressed: () {  
-                Navigator.push(  
-                context,  
-                MaterialPageRoute(builder: (context) => VisionTherapy()),  
-               );  
-               },
+                onPressed: () {
+                  print("RaisedButton");
+                },
                 color: Color(0xFF0C9869),
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30))),

@@ -6,7 +6,7 @@ import '../../enums.dart';
 
 // First Stateless Widget with MaterialApp Start
 class Schools extends StatelessWidget {
- static String routeName = '/school';
+  static String routeName = '/school';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,7 +48,7 @@ class _ListViewPageState extends State<ListViewPage> {
 
   // Image Name List Here
   var imgList = [
-    "assets/images/download-_2_.png",
+    "assets/images/stringio.jpeg",
     "assets/images/school.jpeg",
     "assets/images/school.jpeg",
     "assets/images/school.jpeg",
@@ -65,7 +65,7 @@ class _ListViewPageState extends State<ListViewPage> {
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
         iconTheme: IconThemeData(color: Colors.white),
-        title: Text("Educational Institute "),
+        title: Text("Educational Institutes"),
       ),
       // Main List View With Builder
       body: ListView.builder(

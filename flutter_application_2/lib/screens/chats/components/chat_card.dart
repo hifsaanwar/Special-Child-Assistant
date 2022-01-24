@@ -1,6 +1,7 @@
 import 'package:flutter_application_2/models/Chat.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_application_2/screens/messages/components/message.dart';
+import 'package:flutter_application_2/models/ChatMessage.dart';
 import '../../../constants.dart';
 
 class ChatCard extends StatelessWidget {
@@ -28,22 +29,6 @@ class ChatCard extends StatelessWidget {
                   radius: 24,
                   backgroundImage: AssetImage(chat.image),
                 ),
-                if (chat.isActive)
-                  Positioned(
-                    right: 0,
-                    bottom: 0,
-                    child: Container(
-                      height: 16,
-                      width: 16,
-                      decoration: BoxDecoration(
-                        color: kPrimaryColor,
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                            color: Theme.of(context).scaffoldBackgroundColor,
-                            width: 3),
-                      ),
-                    ),
-                  )
               ],
             ),
             Expanded(
@@ -54,7 +39,7 @@ class ChatCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      chat.name,
+                      chat.groupName,
                       style:
                           TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                     ),
