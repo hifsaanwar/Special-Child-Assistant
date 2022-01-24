@@ -5,10 +5,12 @@ import 'package:flutter_application_2/screens/medical/help.dart';
 
 class Symptoms extends StatelessWidget {
   static String routeName = "/symp";
+  String dropDownValue = 'epilepsy';
 
   @override
   Widget build(BuildContext context) {
-    String dropDownValue = 'epilepsy';
+    
+ 
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
